@@ -121,6 +121,6 @@ Profile Photo Example:
 <img src="https://s3.amazonaws.com/gt7sp-prod/photo/28/44/85/5989876571362854428_0.jpg" alt="profile_photo_id" width="240" height="240"/>
 
 Driver Image Examples:
-<img src="https://s3.amazonaws.com/gt7sp-prod/photo/16/17/54/7062309431552541716_14.png" alt="driver_photo_id half portrait" width="200"/>
+<img src="https://s3.amazonaws.com/gt7sp-prod/photo/16/17/54/7062309431552541716_14.png" alt="driver_photo_id half portrait" width="128"/>
 <img src="https://s3.amazonaws.com/gt7sp-prod/photo/16/17/54/7062309431552541716_22.png" alt="driver_photo_id full portrait" width="200"/>
 ***
