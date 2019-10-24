@@ -3,9 +3,9 @@ Documentation and resources for working with the Gran Turismo Sport API
 
 ## API Endpoints
 * [Profile](Endpoints/profile.md)
-* [Events](Endpoints/events.md)
+* [Event](Endpoints/event.md)
 
-## Other Resources and related 
+## Other Resources and Related Items
 * [Localize](Endpoints/localize.md)
 * [Meta](Endpoints/meta.md)
 * [Tags](Endpoints/tags.md)
