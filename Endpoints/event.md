@@ -1,1 +1,0 @@
-## Event Endpoint doc Placeholder
