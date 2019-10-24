@@ -23,10 +23,10 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
 ### Job IDs
 - `1`: Detailed Info about a specific Race Event
 
-	Requires: event_id_csv
+	**Requires: event_id_csv**
     
-    ```
     Example Response:
+    ```
     {
 		"event": [
   			{
@@ -221,7 +221,7 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
 
 - `2`: Event Calendar by date
 	
-	Requires: channel_id_csv, begin_date, end_date
+	**Requires: channel_id_csv, begin_date, end_date**
 
 	Example Response
 	```
@@ -240,9 +240,10 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
 	```
 
 
-- `3`: Event Calendar (Daily Races)
+- `3`: Event Calendar (Daily or Series Races)
 
-	Requires: channel_id_csv	
+	**Requires: channel_id_csv**
+
 	Example Response
 	```
 	{
@@ -298,5 +299,6 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
 		],
 	}
 	```
-
+***
+### Notes
 > Please see [Localize](Endpoints/localize) for discussion on retrieving the Circuit Name from the course_code ID
