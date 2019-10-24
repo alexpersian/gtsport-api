@@ -301,4 +301,4 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
 	```
 ***
 ### Notes
-> Please see [Localize](Endpoints/localize) for discussion on retrieving the Circuit Name from the course_code ID
+> Please see [Localize](Endpoints/localize.md) for discussion on retrieving the Circuit Name from the course_code ID
