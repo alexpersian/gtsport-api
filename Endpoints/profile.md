@@ -97,3 +97,30 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
 
 ### Private Job IDs
 Some job ids are not available publicly and will return 403 errors if you attempt to use them. These include: `2`, `4-11`, and `14`. It is unknown what these jobs correspond to or the data they provide. `14` is the last valid job ID. Higher numbers simply return 400 errors.
+
+### Retrieving Driver Photos from GTS
+The member profile photo, if set by the player, may be retrieved via job 1 or job 3 as `profile_photo_id`.  
+Likewise, the driver's racing suit portrait may be retrieved via job 3 as `driver_photo_id`
+
+The image asset files are stored on AWS with the following suffixes and file extensions:
+- AWS path is `https://s3.amazonaws.com/gt7sp-prod/photo/`
+- member profile photo : `_0.jpg`
+- driver full portrait with transparent background : `_22.png`
+- driver half portrait with transparent background: `_14.png`
+
+To retrieve the image asset, parse the photo ID as follows to get the path:
+`Example: driver_photo_id: 5989876571362854428-0`
+- drop the last two characters of the string [-0] `$id = 5989876571362854428`
+- take the last six digits [854428]
+- reorder the last six digits in pairs `[CCBBAA]  =  AA/BB/CC = 28/44/85`
+- cat the AWS asset path, ID and extension. (member profile photos use extension _0.jpg | driver images use _22.png or _14.png)
+- using the profile_photo_id example : `https://s3.amazonaws.com/gt7sp-prod/photo/28/44/85/5989876571362854428_0.jpg`
+
+***
+Profile Photo Example:
+<img src="https://s3.amazonaws.com/gt7sp-prod/photo/28/44/85/5989876571362854428_0.jpg" alt="profile_photo_id" width="240" height="240"/>
+
+Driver Image Examples:
+<img src="https://s3.amazonaws.com/gt7sp-prod/photo/16/17/54/7062309431552541716_14.png" alt="driver_photo_id half portrait" width="200"/>
+<img src="https://s3.amazonaws.com/gt7sp-prod/photo/16/17/54/7062309431552541716_22.png" alt="driver_photo_id full portrait" width="200"/>
+***
