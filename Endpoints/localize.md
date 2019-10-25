@@ -31,6 +31,6 @@ gt7sp.game.COMMON.CourseName.44cc5bba82772146ae612e3f1e8a5f84": "KYOTO DRIVING P
 
 
 ### Related Resources
-* [meta](Endpoints/meta.md)
-* [tags](Endpoints/tags.md)
+* [meta](meta.md)
+* [tags](tags.md)
 
