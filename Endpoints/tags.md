@@ -7,6 +7,6 @@ Tags is a GET resource that provides objects and strings that are used throughou
 Car Names, and many livery and scapes related strings or ID's.
 
 ### Related Resources
-* [localize](Endpoints/localize.md)
-* [meta](Endpoints/meta.md)
+* [localize](localize.md)
+* [meta](meta.md)
 
