@@ -9,6 +9,7 @@ Documentation and resources for working with the Gran Turismo Sport API
 * [Localize](Endpoints/localize.md)
 * [Meta](Endpoints/meta.md)
 * [Tags](Endpoints/tags.md)
+* [Livery](Endpoints/livery.md)
 
 ## Disclaimer
 The information contained in this repo is for educational and informational purposes only.
