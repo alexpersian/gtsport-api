@@ -1,9 +1,14 @@
 ## Profile
 
+**NOTE:** It is *not* possible to perform a reverse lookup of PSN ID -> GTS ID. The service only provides information given you already have the GTS ID.
+
 Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
 
 ### Endpoint
 `/profile`
+
+### Request Method
+`POST`
 
 ### Universal Parameters
 - `user_no`: String, user profile number
