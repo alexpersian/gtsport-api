@@ -114,18 +114,18 @@ The image asset files are stored on AWS with the following suffixes and file ext
 - driver half portrait with transparent background: `_14.png`
 
 To retrieve the image asset, parse the photo ID as follows to get the path:
-`Example: driver_photo_id: 5989876571362854428-0`
-- drop the last two characters of the string [-0] `$id = 5989876571362854428`
-- take the last six digits [854428]
-- reorder the last six digits in pairs `[CCBBAA]  =  AA/BB/CC = 28/44/85`
-- cat the AWS asset path, ID and extension. (member profile photos use extension _0.jpg | driver images use _22.png or _14.png)
-- using the profile_photo_id example : `https://s3.amazonaws.com/gt7sp-prod/photo/28/44/85/5989876571362854428_0.jpg`
+`Example: driver_photo_id: 8574875682894774301-0`
+- drop the last two characters of the string [`-0`] `$id = 8574875682894774301`
+- take the last six digits [`774301`]
+- reorder the last six digits in pairs `[CCBBAA]  =  AA/BB/CC = 01/43/77`
+- cat the AWS asset path, ID and extension. (member profile photos uses extension `_0.jpg` | driver images use `_22.png` or `_14.png`)
+- using the driver_photo_id example: `https://s3.amazonaws.com/gt7sp-prod/photo/01/43/77/8574875682894774301_14.png`
 
 ***
-Profile Photo Example:  
-<img src="https://s3.amazonaws.com/gt7sp-prod/photo/28/44/85/5989876571362854428_0.jpg" alt="profile_photo_id" width="128" height="128"/>
+Profile Photo Example:
+<img src="https://s3.amazonaws.com/gt7sp-prod/photo/08/97/47/8224232633225479708_0.jpg" alt="profile_photo_id" width="128" height="128"/>
 
-Driver Image Examples:  
-<img src="https://s3.amazonaws.com/gt7sp-prod/photo/16/17/54/7062309431552541716_14.png" alt="driver_photo_id half portrait" width="200"/>
-<img src="https://s3.amazonaws.com/gt7sp-prod/photo/16/17/54/7062309431552541716_22.png" alt="driver_photo_id full portrait" width="200"/>
+Driver Image Examples:
+<img src="https://s3.amazonaws.com/gt7sp-prod/photo/01/43/77/8574875682894774301_14.png" alt="driver_photo_id half portrait" width="200"/>
+<img src="https://s3.amazonaws.com/gt7sp-prod/photo/01/43/77/8574875682894774301_22.png" alt="driver_photo_id full portrait" width="200"/>
 ***
