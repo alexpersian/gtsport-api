@@ -16,8 +16,12 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
 
 ### Job IDs
 - `1`: Provides basic info like PSN id, country code, profile photo id
-    ```
+
+    Example Request:
+    `POST https://www.gran-turismo.com/us/api/gt7sp/profile/?user_no=9568550&job=1`
+
     Example Response:
+    ```
     {
       "profile": {
         "id": "xGranadier",
@@ -28,9 +32,14 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
       }
     }
     ```
+
 - `3`: Provides detailed stats about user's GTS records
-    ```
+
+    Example Request:
+    `POST https://www.gran-turismo.com/us/api/gt7sp/profile/?user_no=9568550&job=3`
+
     Example Response:
+    ```
     {
       "stats": {
         "user_no": "9568550",
@@ -56,13 +65,19 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
       }
     }
     ```
-- `12`: Provides a stats history for the user. Requires additional parameters.
+
+- `12`: Provides a Driver Rating history for the user. 
+    **Additional params:**
     * `month_begin` 1-12
     * `month_end` 1-12
     * `year_begin` YYYY
     * `year_end` YYYY
-    ```
+    
+    Example Request:
+    `POST https://www.gran-turismo.com/us/api/gt7sp/profile/?user_no=9568550&job=12&month_begin=10&month_end=10&year_begin=2019&year_end=2019`
+
     Example Response:
+    ```
     {
       "stats_history": [
         {
@@ -96,6 +111,33 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
           "stats2": [ // more numbers ],
           // stats3 - n ...
         }
+      ]
+    }
+    ```
+
+- `13`: Provides a history of Sport Mode race stats.
+
+    Example Request:
+    `POST https://www.gran-turismo.com/us/api/gt7sp/profile/?user_no=9568550&job=13`
+
+    Example Response:
+    ```
+    {
+      "sport_stats":[
+        {
+          "index":"1",
+          "race":"572",
+          "win":"24",
+          "top5":"169",
+          "pole_position":"35",
+          "rank_qualify":"4317",
+          "rank_final":"4742",
+          "rank_change":"425",
+          "lap":"3132",
+          "lead_lap":"115",
+          "top_match":"0"
+        },
+        //...
       ]
     }
     ```
