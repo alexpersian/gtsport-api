@@ -2,14 +2,16 @@
 Documentation and resources for working with the publicly available Gran Turismo Sport API.
 
 ## API Endpoints
-* [Profile](Endpoints/profile.md)
-* [Event](Endpoints/event.md)
-* [Livery](Endpoints/livery.md)
-* [Localize](Endpoints/localize.md)
-* [Meta](Endpoints/meta.md)
-* [Tags](Endpoints/tags.md)
-* [Course Record](Endpoints/course_record.md)
-* [Ranking](Endpoints/ranking.md)
+* POST
+	* [Profile](Endpoints/profile.md)
+	* [Event](Endpoints/event.md)
+	* [Course Record](Endpoints/course_record.md)
+	* [Ranking](Endpoints/ranking.md)
+* GET
+	* [Livery](Endpoints/livery.md)
+	* [Localize](Endpoints/localize.md)
+	* [Meta](Endpoints/meta.md)
+	* [Tags](Endpoints/tags.md)
 
 ## Experimental
 * [Authorization Required](Endpoints/authed_endpoints.md)
