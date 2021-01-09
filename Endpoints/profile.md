@@ -143,7 +143,7 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
     ```
 
 ### Private Job IDs
-Some job ids are not available publicly and will return 403 errors if you attempt to use them. These include: `2`, `4-11`, and `14`. It is unknown what these jobs correspond to or the data they provide. `14` is the last valid job ID. Higher numbers simply return 400 errors.
+Some jobs require user authorization. They are documented [here](authed_endpoints.md).
 
 ### Retrieving Driver Photos from GTS
 The member profile photo, if set by the player, may be retrieved via job 1 or job 3 as `profile_photo_id`.  
@@ -165,9 +165,10 @@ To retrieve the image asset, parse the photo ID as follows to get the path:
 
 ***
 Profile Photo Example:
+
 <img src="https://s3.amazonaws.com/gt7sp-prod/photo/08/97/47/8224232633225479708_0.jpg" alt="profile_photo_id" width="128" height="128"/>
 
 Driver Image Examples:
+
 <img src="https://s3.amazonaws.com/gt7sp-prod/photo/01/43/77/8574875682894774301_14.png" alt="driver_photo_id half portrait" width="200"/>
 <img src="https://s3.amazonaws.com/gt7sp-prod/photo/01/43/77/8574875682894774301_22.png" alt="driver_photo_id full portrait" width="200"/>
-***

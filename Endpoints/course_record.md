@@ -16,6 +16,7 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
 
 ### Job IDs
 - `1`: Gives course records
+
     **Additional params:**
     * `course_id`: String, ID of the track
     * `category_id`: String, TBD

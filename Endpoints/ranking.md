@@ -16,6 +16,7 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
 
 ### Job IDs
 - `1`: Specific river ranking details.
+    
     **Additional params:**
     * `board_id`: String, ID of the region board. Retrieved from `/event` endpoint.
 
@@ -43,13 +44,13 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
     ```
 
 - `3`: Regional driver rankings
+  
   **Additional params**
   * `board_id`: String, ID of the region board. Retrieved from `/event` endpoint.
   * `begin`: String, place on rank board to start
   * `end`: String, place on rank board to end
 
   Example Request:
-  "Top 10 in region"
   `POST https://www.gran-turismo.com/es/api/gt7sp/ranking/?job=3&board_id=1030442&begin=1&end=10`
 
   Example Response:

@@ -12,7 +12,7 @@ Documentation and resources for working with the publicly available Gran Turismo
 * [Ranking](Endpoints/ranking.md)
 
 ## Experimental
-* [Auth-Required Endpoints](Endpoints/authed_endpoints.md)
+* [Authorization Required](Endpoints/authed_endpoints.md)
 
 ## Other Resources
 * [HTTP Client - Example Project](GranTurismoSportAPI.json)
