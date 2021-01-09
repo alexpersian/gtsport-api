@@ -16,8 +16,12 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
 
 ### Job IDs
 - `1`: Provides basic info like PSN id, country code, profile photo id
-    ```
+
+    Example Request:
+    `POST https://www.gran-turismo.com/us/api/gt7sp/profile/?user_no=9568550&job=1`
+
     Example Response:
+    ```
     {
       "profile": {
         "id": "xGranadier",
@@ -28,9 +32,14 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
       }
     }
     ```
+
 - `3`: Provides detailed stats about user's GTS records
-    ```
+
+    Example Request:
+    `POST https://www.gran-turismo.com/us/api/gt7sp/profile/?user_no=9568550&job=3`
+
     Example Response:
+    ```
     {
       "stats": {
         "user_no": "9568550",
@@ -56,13 +65,19 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
       }
     }
     ```
-- `12`: Provides a stats history for the user. Requires additional parameters.
+
+- `12`: Provides a Driver Rating history for the user. 
+    **Additional params:**
     * `month_begin` 1-12
     * `month_end` 1-12
     * `year_begin` YYYY
     * `year_end` YYYY
-    ```
+    
+    Example Request:
+    `POST https://www.gran-turismo.com/us/api/gt7sp/profile/?user_no=9568550&job=12&month_begin=10&month_end=10&year_begin=2019&year_end=2019`
+
     Example Response:
+    ```
     {
       "stats_history": [
         {
@@ -100,8 +115,35 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
     }
     ```
 
+- `13`: Provides a history of Sport Mode race stats.
+
+    Example Request:
+    `POST https://www.gran-turismo.com/us/api/gt7sp/profile/?user_no=9568550&job=13`
+
+    Example Response:
+    ```
+    {
+      "sport_stats":[
+        {
+          "index":"1",
+          "race":"572",
+          "win":"24",
+          "top5":"169",
+          "pole_position":"35",
+          "rank_qualify":"4317",
+          "rank_final":"4742",
+          "rank_change":"425",
+          "lap":"3132",
+          "lead_lap":"115",
+          "top_match":"0"
+        },
+        //...
+      ]
+    }
+    ```
+
 ### Private Job IDs
-Some job ids are not available publicly and will return 403 errors if you attempt to use them. These include: `2`, `4-11`, and `14`. It is unknown what these jobs correspond to or the data they provide. `14` is the last valid job ID. Higher numbers simply return 400 errors.
+Some jobs require user authorization. They are documented [here](authed_endpoints.md).
 
 ### Retrieving Driver Photos from GTS
 The member profile photo, if set by the player, may be retrieved via job 1 or job 3 as `profile_photo_id`.  
@@ -123,9 +165,10 @@ To retrieve the image asset, parse the photo ID as follows to get the path:
 
 ***
 Profile Photo Example:
+
 <img src="https://s3.amazonaws.com/gt7sp-prod/photo/08/97/47/8224232633225479708_0.jpg" alt="profile_photo_id" width="128" height="128"/>
 
 Driver Image Examples:
+
 <img src="https://s3.amazonaws.com/gt7sp-prod/photo/01/43/77/8574875682894774301_14.png" alt="driver_photo_id half portrait" width="200"/>
 <img src="https://s3.amazonaws.com/gt7sp-prod/photo/01/43/77/8574875682894774301_22.png" alt="driver_photo_id full portrait" width="200"/>
-***
