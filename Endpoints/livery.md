@@ -13,11 +13,29 @@ All of the various image assets related to the livery are accessible through dif
 The available options include:
 
 * `23.jpg` = Full size front profile view
-    ![Full Size Livery](../Images/8575500274217550897_23.jpg)
+
+![](../Images/8575500274217550897_23.jpg)
+
 * `22.jpg` = Same as 12 but larger
+
+![](../Images/8575500274217550897_22.jpg)
+
 * `21.jpg` = Same as 13 but smaller
+
+![](../Images/8575500274217550897_21.jpg)
+
 * `11.jpg` = Thumbnail front profile view
+
+![](../Images/8575500274217550897_11.jpg)
+
 * `12.jpg` = Thumbnail front profile view (taller aspect ratio)
+
+![](../Images/8575500274217550897_12.jpg)
+
 * `13.jpg` = Thumbnail front profile view (larger size)
+
+![](../Images/8575500274217550897_13.jpg)
+
 * `1.png`  = Multi-profile livery views without depth
-    ![Multi-Angle Livery](../Images/8575500274217550897_1.png)
+
+![](../Images/8575500274217550897_1.png)
