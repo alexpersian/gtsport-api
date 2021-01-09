@@ -19,6 +19,7 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
 	- Example: `1,2,3` for all daily races
 - `begin_date`: String, date format YYYY-MM-DD
 - `end_date`: String, date format YYYY-MM-DD
+- `user_no`: String, user profile number
 
 ### Job IDs
 - `1`: Event Details
@@ -224,6 +225,38 @@ Base URL: `https://www.gran-turismo.com/us/api/gt7sp`
 	    },
 	    //...
 	  ]
+	}
+	```
+
+- `5`: Event Results (User)
+
+	**Requires: user_no**
+
+	Example Request:
+	`POST https://www.gran-turismo.com/us/api/gt7sp/event/?job=5&user_no=9568550`
+
+	Example Response:
+	```
+	{
+	  "event_result_id":"8986906",
+	  "event_calendar_id":"3815036",
+	  "detail":{
+	    "event_result":{
+	      "entry":[
+	        {
+	          "lap":20,
+	          "lead_lap":14,
+	          "manner_point":33,
+	          "manufacturer_id":17,
+	          "qualify_rank":1,
+	          "rank":1,
+	          "user_no":3470804
+	        },
+	        //...
+	      ],
+	      "entry_count":20
+	    },
+	  "update_rating":true
 	}
 	```
 
