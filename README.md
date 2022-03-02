@@ -1,5 +1,7 @@
-# gt7sp-api
+# Gran Turismo Sport API
 Documentation and resources for working with the publicly available Gran Turismo Sport API.
+
+**NOTE:** gt7sp is the internal name for Gran Turismo Sport. This has nothing to do with the upcoming Gran Turismo 7 game.
 
 ## API Endpoints
 * POST
@@ -22,5 +24,3 @@ Documentation and resources for working with the publicly available Gran Turismo
 
 ## Disclaimer
 The information contained in this repo is for educational and informational purposes only. Gran Turismo is copyright Sony Interactive Entertainment, Inc and developed by Polyphony Digital.
-
-**NOTE:** gt7sp is the internal name for Gran Turismo Sport. This has nothing to do with the upcoming Gran Turismo 7 game.
