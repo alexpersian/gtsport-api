@@ -1,3 +1,6 @@
+# NO LONGER SUPPORTED
+Unfortunately the Gran Turismo Sport online services have been taken offline as of [Jan 31, 2024](https://www.gran-turismo.com/us/gtsport/news/00_1344615.html). This repo will be left open as-is for reference purposes, but no future support will be provided.
+
 # Gran Turismo Sport API
 Documentation and resources for working with the publicly available Gran Turismo Sport API.
 
